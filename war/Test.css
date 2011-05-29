@@ -1,33 +1,83 @@
-/** Add css rules here for your application. */
 
+/* App styles */
 
-.app
+.appWindow
 {
-	border: 0.5px solid black;
-	background: #eee;	
+
+	background: none repeat scroll 0 0 white;
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.05) inset;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.05) inset;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.05) inset;
 	
--moz-box-shadow: 0 0 5px 5px #888;
--webkit-box-shadow: 0 0 5px 5px#888;
-box-shadow: 0 0 5px 5px #888;
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	
+}
+
+.appWindow .gwt-MenuBar-horizontal .gwt-MenuItem {
+	padding: 0px 10px;
+	vertical-align: bottom;
+	color: #666;
+	font-weight: none;
+}
+
+
+.appWindow .gwt-MenuBar-horizontal {
+	
+	background: rgba(0, 0, 0, 0.04);
+	border:none;
+	border-bottom: 1px solid #BBB;
+}
+
+
+.desktop
+{
+	background: #F0F0F0;
+	color: #333;
+}
+
+
+/** Bottom bar, minimized programs and shit **/
+
+.startBar
+{
+	background: #E3E8F3 url(images/hborder.png) repeat-x 0px -2003px;
+    border: 1px solid #BBB;
+    padding:5px;
+	
+}
+
+.startBar .headerBar
+{
+	background: #eee;
+	margin-right: 10px;
+	border: 1px solid #000;
+}
+
+
+.resize
+{
+	float: right;	
+	background-image: url(resize.png);
+	 background-repeat: no-repeat;
 }
 
 .app-topBar
 {
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #eee;
 }
 
-
-.flexTable {
-  opacity: 0;
-  -webkit-transition: opacity 1s linear;
-}
-
-.flexTable-x {
-  opacity: 1;
-}
 
 .gwt-Label{
 	cursor:move;
+	background: rgba(0, 0, 0, 0.04);
+	padding: 8px;
+	border-bottom: 1px solid #BBB;
+	
 }
 
 /** Example rules used by the template application (remove for your app) */
